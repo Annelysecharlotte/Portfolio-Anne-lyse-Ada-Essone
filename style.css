@@ -10,6 +10,12 @@ header{
     padding: 10px 0;
     text-align: center;
 }
+button{
+    transition: backgound-color 0.3s;
+}
+button:hover{
+    background-color: #0056b3;
+}
 nav ul{
     list-style: none;
     padding: 0;
