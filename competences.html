@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compétences | Ada Charlotte</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #e0f7fa, #f1f8e9);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .section {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #00796b;
+      margin-bottom: 2rem;
+      position: relative;
+    }
+
+    h2::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: #00796b;
+      margin: 0.5rem auto 0;
+      border-radius: 2px;
+    }
+
+    .skills-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .skill {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      padding: 2rem 1rem;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .skill:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .skill img {
+      max-width: 80px;
+      margin-bottom: 1rem;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .skill img:hover {
+      transform: scale(1.15);
+    }
+
+    .skill p {
+      display: none;
+      font-size: 0.95rem;
+      margin-top: 1rem;
+      color: #444;
+    }
+
+    .skill.active p {
+      display: block;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+    }
+</style>
+</head>
+<body>
+<header>
+    <nav>
+    <div class="logo">Ada Charlotte</div>
+    <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="apropos.html">À propos</a></li>
+        <li><a href="competences.html" class="active">Compétences</a></li>
+        <li><a href="projets.html">Projets</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    </nav>
+</header>
+
+<section class="section">
+    <h2>Mes compétences</h2>
+    <div class="skills-gallery">
+    <div class="skill">
+        <img src="images/html-css.png" alt="HTML/CSS" onclick="toggleSkill(this)">
+        <p>HTML / CSS – Création de sites web modernes et responsive</p>
+    </div>
+    <div class="skill">
+        <img src="images/javascript.png" alt="JavaScript" onclick="toggleSkill(this)">
+        <p>JavaScript – Dynamisme et interactivité côté client</p>
+    </div>
+    <div class="skill">
+        <img src="images/php-mysql.png" alt="PHP/MySQL" onclick="toggleSkill(this)">
+        <p>PHP / MySQL – Développement backend et gestion de bases de données</p>
+    </div>
+    <div class="skill">
+        <img src="images/python.png" alt="Python" onclick="toggleSkill(this)">
+        <p>Python – Scripts, automation et développement d’applications</p>
+    </div>
+    <div class="skill">
+        <img src="images/database.png" alt="Base de données" onclick="toggleSkill(this)">
+        <p>Modélisation de bases de données – MCD, MLD et conception avec MySQL</p>
+    </div>
+    <div class="skill">
+        <img src="images/cybersecurite.png" alt="Cybersécurité" onclick="toggleSkill(this)">
+        <p>Cybersécurité – Bases de la sécurité informatique appliquée</p>
+    </div>
+    <div class="skill">
+        <img src="images/network.png" alt="Réseaux" onclick="toggleSkill(this)">
+        <p>Réseau – Compréhension des réseaux IP, Virtualisation avec VirtualBox</p>
+    </div>
+    <div class="skill">
+        <img src="images/github.png" alt="GitHub" onclick="toggleSkill(this)">
+        <p>GitHub – Suivi de version et déploiement de projets (portfolio, etc.)</p>
+    </div>
+    <div class="skill">
+        <img src="images/azure.png" alt="Azure Data Studio" onclick="toggleSkill(this)">
+        <p>Azure Data Studio – Manipulation, sauvegarde et extraction de données</p>
+    </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Ada Charlotte. Tous droits réservés.</p>
+</footer>
+
+<script>
+    function toggleSkill(imgElement) {
+    const allSkills = document.querySelectorAll('.skill');
+    allSkills.forEach(skill => {
+        if (skill !== imgElement.parentElement) {
+        skill.classList.remove('active');
+        }
+    });
+    imgElement.parentElement.classList.toggle("active");
+    }
+</script>
+</body>
+</html>
