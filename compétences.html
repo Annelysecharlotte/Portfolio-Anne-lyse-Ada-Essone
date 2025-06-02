@@ -1,76 +1,40 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Compétences</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    .skill {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-      margin-bottom: 30px;
-    }
-    .skill img {
-      width: 80px;
-      height: auto;
-    }
-    .skill-description {
-      max-width: 800px;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compétences | Ada Charlotte</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
   <header>
-    <h1>Mes compétences</h1>
+    <nav>
+      <div class="logo">Ada Charlotte</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="apropos.html">À propos</a></li>
+        <li><a href="competences.html" class="active">Compétences</a></li>
+        <li><a href="projets.html">Projets</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <nav>
-    <a href="index.html">Accueil</a>
-    <a href="about.html">À propos</a>
-    <a href="skills.html">Compétences</a>
-    <a href="projects.html">Projets</a>
-    <a href="cv.html">CV</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-
-  <section>
-    <div class="skill">
-      <img src="images/html-css.png" alt="HTML/CSS">
-      <div class="skill-description">
-        <h2>HTML / CSS</h2>
-        <p>Langages fondamentaux pour créer et styliser des pages web. HTML structure le contenu, CSS le met en forme.</p>
-      </div>
-    </div>
-
-    <div class="skill">
-      <img src="images/javascript.png" alt="JavaScript">
-      <div class="skill-description">
-        <h2>JavaScript</h2>
-        <p>Langage de programmation permettant de rendre les pages web interactives (animations, formulaires dynamiques, etc.).</p>
-      </div>
-    </div>
-
-    <div class="skill">
-      <img src="images/python.png" alt="Python">
-      <div class="skill-description">
-        <h2>Python</h2>
-        <p>Langage polyvalent apprécié pour sa simplicité. Idéal pour l’automatisation, le traitement de données ou les scripts.</p>
-      </div>
-    </div>
-
-    <div class="skill">
-      <img src="images/git-github.png" alt="Git/GitHub">
-      <div class="skill-description">
-        <h2>Git / GitHub</h2>
-        <p>Outils de versionnage de code. Git permet de suivre l’évolution d’un projet, GitHub facilite le partage et la collaboration.</p>
-      </div>
-    </div>
+  <section class="section">
+    <h2>Mes compétences</h2>
+    <ul class="skills-list">
+      <li>HTML / CSS – Création de sites web modernes et responsive</li>
+      <li>JavaScript – Dynamisme et interactivité côté client</li>
+      <li>PHP / MySQL – Développement backend et gestion de bases de données</li>
+      <li>Python – Scripts, automation et développement d’applications</li>
+      <li>Modélisation de bases de données – MCD, MLD et conception avec MySQL</li>
+      <li>Cybersécurité – Bases de la sécurité informatique appliquée</li>
+      <li>Réseau – Compréhension des réseaux IP, Virtualisation avec VirtualBox</li>
+      <li>GitHub – Suivi de version et déploiement de projets (portfolio, etc.)</li>
+      <li>Azure Data Studio – Manipulation, sauvegarde et extraction de données</li>
+    </ul>
   </section>
 
-  <footer>
-    <p>&copy; 2025 Ton Nom - Portfolio</p>
-  </footer>
 </body>
 </html>
