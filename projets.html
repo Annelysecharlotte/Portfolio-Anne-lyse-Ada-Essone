@@ -2,14 +2,39 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Projets | Ada Charlotte</title>
-<link rel="stylesheet" href="style.css">
-<script defer src="script.js"></script>
 <style>
     body {
-    background: linear-gradient(to bottom right, #fce4ec, #e3f2fd);
+    margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom right, #fce4ec, #e3f2fd);
+    }
+
+    nav {
+    background-color: rgba(106, 27, 154, 0.9);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    }
+
+    .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    }
+
+    .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    }
+
+    .nav-links a.active,
+    .nav-links a:hover {
+    text-decoration: underline;
     }
 
     .section {
@@ -23,17 +48,6 @@
     font-size: 2.5rem;
     color: #6a1b9a;
     margin-bottom: 2rem;
-    position: relative;
-    }
-
-    h2::after {
-    content: '';
-    display: block;
-    width: 60px;
-    height: 4px;
-    background: #6a1b9a;
-    margin: 0.5rem auto 0;
-    border-radius: 2px;
     }
 
     .projets-gallery {
@@ -46,32 +60,29 @@
     background: white;
     border-radius: 16px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-    padding: 2rem;
-    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 1.5rem;
     text-align: center;
-    position: relative;
+    transition: transform 0.3s;
+    }
+
+    .projet:hover {
+    transform: translateY(-5px);
     }
 
     .projet img {
     width: 100%;
     max-width: 200px;
+    border-radius: 12px;
     margin-bottom: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    }
-
-    .projet:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
     }
 
     .projet h3 {
     color: #4a148c;
-    margin-bottom: 0.5rem;
+    margin: 1rem 0 0.5rem;
     }
 
     .projet p {
-    color: #333;
+    color: #444;
     font-size: 0.95rem;
     }
 
@@ -83,61 +94,168 @@
     padding: 0.5rem 1rem;
     border-radius: 6px;
     text-decoration: none;
-    font-size: 0.9rem;
-    transition: background-color 0.3s ease;
+    transition: background 0.3s;
     }
 
     .voir-btn:hover {
     background-color: #4a148c;
     }
+
+    /* Modal */
+    .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    }
+
+    .modal-content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 600px;
+    width: 100%;
+    position: relative;
+    }
+
+    .modal-content img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    }
+
+    .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #6a1b9a;
+    }
+
+    footer {
+    text-align: center;
+    padding: 2rem 0;
+    background: rgba(106, 27, 154, 0.9);
+    color: white;
+    }
 </style>
 </head>
 <body>
-<header>
-    <nav>
+
+<nav>
     <div class="logo">Ada Charlotte</div>
     <ul class="nav-links">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="apropos.html">À propos</a></li>
-        <li><a href="competences.html">Compétences</a></li>
-        <li><a href="projets.html" class="active">Projets</a></li>
-        <li><a href="contact.html">Contact</a></li>
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="apropos.html">À propos</a></li>
+    <li><a href="competences.html">Compétences</a></li>
+    <li><a href="projets.html" class="active">Projets</a></li>
+    <li><a href="contact.html">Contact</a></li>
     </ul>
-    </nav>
-</header>
+</nav>
 
 <section class="section">
     <h2>Mes projets</h2>
     <div class="projets-gallery">
+
     <div class="projet">
         <img src="images/jeu-oriente-objet.png" alt="Jeu orienté objet">
         <h3>Jeu vidéo orienté objet</h3>
-        <p>Création d’un jeu vidéo en Python en utilisant la programmation orientée objet. Le jeu intègre des classes, des objets et une interface simple, conçu dans le cadre d’un projet d'apprentissage.</p>
-        <a href="#" class="voir-btn">Voir le projet</a>
+        <p>Création d’un jeu vidéo en Python en POO.</p>
+        <a class="voir-btn" onclick="openModal('modal1')">Voir le projet</a>
     </div>
+
     <div class="projet">
-        <img src="images/mcd-plainte.png" alt="Modèle conceptuel plaintes clients">
-        <h3>Modèle conceptuel de base de données</h3>
-        <p>Conception d’un modèle conceptuel pour une plateforme de plaintes clients, avec un schéma MCD complet permettant une base de données structurée pour la gestion et le suivi des réclamations.</p>
-        <a href="#" class="voir-btn">Voir le projet</a>
+        <img src="images/mcd-plainte.png" alt="Modèle MCD plaintes">
+        <h3>MCD plateforme de plaintes</h3>
+        <p>Conception MCD/MLD pour base de données.</p>
+        <a class="voir-btn" onclick="openModal('modal2')">Voir le projet</a>
     </div>
+
     <div class="projet">
         <img src="images/jeu-python.png" alt="Jeu Python">
-        <h3>Jeu vidéo Python</h3>
-        <p>Développement d’un jeu interactif avec Python sur Visual Studio Code, dans un projet pédagogique.</p>
-        <a href="#" class="voir-btn">Voir le projet</a>
+        <h3>Jeu Python interactif</h3>
+        <p>Développement Python avec interface simple.</p>
+        <a class="voir-btn" onclick="openModal('modal3')">Voir le projet</a>
     </div>
+
     <div class="projet">
-        <img src="images/modelisation-bdd.png" alt="Modélisation base de données">
-        <h3>Modélisation de base de données</h3>
-        <p>Création d’un MCD et MLD, génération de tables SQL et insertion de données avec MySQL Workbench.</p>
-        <a href="#" class="voir-btn">Voir le projet</a>
+        <img src="images/modelisation-bdd.png" alt="Modélisation BDD">
+        <h3>Modélisation SQL</h3>
+        <p>MCD, MLD, création de tables et insertion SQL.</p>
+        <a class="voir-btn" onclick="openModal('modal4')">Voir le projet</a>
     </div>
+
     </div>
 </section>
+
+<!-- Modals -->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+    <span class="close-btn" onclick="closeModal('modal1')">&times;</span>
+    <img src="images/jeu-oriente-objet.png" alt="Jeu orienté objet">
+    <h3>Jeu orienté objet</h3>
+    <p>Ce projet consiste à créer un jeu avec Python en utilisant les principes de la programmation orientée objet (POO). Il inclut des classes, des objets, une interface utilisateur simple.</p>
+    </div>
+</div>
+
+<div id="modal2" class="modal">
+    <div class="modal-content">
+    <span class="close-btn" onclick="closeModal('modal2')">&times;</span>
+    <img src="images/mcd-plainte.png" alt="MCD">
+    <h3>Base de données plaintes</h3>
+    <p>Un MCD complet pour la gestion de plaintes clients, avec toutes les entités et relations nécessaires à une base relationnelle bien structurée.</p>
+    </div>
+</div>
+
+<div id="modal3" class="modal">
+    <div class="modal-content">
+    <span class="close-btn" onclick="closeModal('modal3')">&times;</span>
+    <img src="images/jeu-python.png" alt="Jeu Python">
+    <h3>Jeu Python</h3>
+    <p>Un jeu Python développé dans un cadre pédagogique pour apprendre les bases de la logique, les boucles, les conditions et l'affichage graphique simple.</p>
+    </div>
+</div>
+
+<div id="modal4" class="modal">
+    <div class="modal-content">
+    <span class="close-btn" onclick="closeModal('modal4')">&times;</span>
+    <img src="images/modelisation-bdd.png" alt="BDD">
+    <h3>Modélisation BDD</h3>
+    <p>Ce projet couvre la création d’un MCD, la transformation en MLD, la création des tables dans MySQL Workbench, et l’insertion de données réelles.</p>
+    </div>
+</div>
 
 <footer>
     <p>&copy; 2025 Ada Charlotte. Tous droits réservés.</p>
 </footer>
+
+<script>
+    function openModal(id) {
+    document.getElementById(id).style.display = 'flex';
+    }
+
+    function closeModal(id) {
+    document.getElementById(id).style.display = 'none';
+    }
+
+    // Fermer les modales si clic en dehors
+    window.onclick = function(event) {
+    document.querySelectorAll('.modal').forEach(modal => {
+        if (event.target === modal) {
+        modal.style.display = 'none';
+        }
+    });
+    }
+</script>
+
 </body>
 </html>
