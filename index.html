@@ -9,59 +9,114 @@
     body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(to bottom right, #fffde7, #e0f7fa);
+    background: linear-gradient(135deg, #fce4ec, #e1bee7);
+    color: #333;
     }
+
+    header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgba(106, 27, 154, 0.9);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    }
+
+    .logo {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    }
+
+    .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    }
+
+    .nav-links li a {
+    color: #eee;
+    text-decoration: none;
+    font-weight: 600;
+    }
+
+    .nav-links li a.active,
+    .nav-links li a:hover {
+    color: #fff;
+    text-shadow: 0 0 5px #d1c4e9;
+    }
+
     .hero {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 6rem 2rem;
-    background: linear-gradient(to right, #26c6da, #ab47bc);
-    color: white;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 5rem 2rem;
+    max-width: 1200px;
+    margin: auto;
     }
-    .hero img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid white;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
-    margin-bottom: 2rem;
-    transition: transform 0.4s ease;
+
+    .hero-text {
+    flex: 1 1 500px;
+    text-align: left;
     }
-    .hero img:hover {
-    transform: scale(1.05);
-    }
+
     .hero h1 {
-    font-size: 2.8rem;
+    font-size: 1.6rem;
+    color: #6a1b9a;
     margin-bottom: 1rem;
     }
+
     .hero p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    color: #555;
     max-width: 600px;
     }
-    .section-links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    padding: 3rem 2rem;
+
+    .hero-img {
+    flex: 1 1 300px;
+    text-align: center;
     }
-    .section-links a {
-    background: white;
-    border-radius: 12px;
-    padding: 1.5rem 2rem;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+    .hero-img img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #6a1b9a;
+    box-shadow: 0 0 15px rgba(33, 150, 243, 0.6), 0 0 25px rgba(63, 81, 181, 0.4);
+    transition: transform 0.3s ease;
+    }
+
+    .hero-img img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(33, 150, 243, 0.8), 0 0 35px rgba(63, 81, 181, 0.6);
+    }
+
+    .cv-btn {
+    display: inline-block;
+    margin-top: 1.5rem;
+    background-color: #6a1b9a;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
     text-decoration: none;
-    color: #333;
     font-weight: bold;
-    transition: transform 0.3s, background 0.3s;
+    transition: background-color 0.3s ease;
     }
-    .section-links a:hover {
-    background: #f3e5f5;
-    transform: translateY(-5px);
+
+    .cv-btn:hover {
+    background-color: #4a148c;
+    }
+
+    footer {
+    text-align: center;
+    padding: 1rem;
+    background: #6a1b9a;
+    color: #eee;
     }
 </style>
 </head>
@@ -75,26 +130,23 @@
         <li><a href="competences.html">Compétences</a></li>
         <li><a href="projets.html">Projets</a></li>
         <li><a href="contact.html">Contact</a></li>
-
     </ul>
     </nav>
 </header>
 
 <section class="hero">
-    <img src="images/portrait.jpg" alt="Portrait de Ada Charlotte">
-    <h1>Ada Charlotte</h1>
-    <p>Développeuse web en devenir — passionnée par les bases de données.</p>
-</section>
-
-<section class="section-links">
-    <a href="apropos.html">À propos</a>
-    <a href="competences.html">Mes compétences</a>
-    <a href="projets.html">Mes projets</a>
-    <a href="contact.html">Me contacter</a>
+    <div class="hero-text">
+    <h1>Bienvenue sur mon portfolio</h1>
+    <p>Je suis Ada Charlotte, étudiante en BTS SIO option SLAM, passionnée par le développement web et la modélisation de bases de données. Découvrez mes compétences, projets et réalisations à travers ce site !</p>
+    <a href="documents/CV_Ada_Charlotte.pdf" class="cv-btn" download>Télécharger mon CV</a>
+    </div>
+    <div class="hero-img">
+    <img src="images/photo-profil.jpg" alt="Photo de profil Ada Charlotte">
+    </div>
 </section>
 
 <footer>
-    <p style="text-align: center; padding: 2rem; color: #666;">&copy; 2025 Ada Charlotte. Tous droits réservés.</p>
+    &copy; 2025 Ada Charlotte. Tous droits réservés.
 </footer>
 </body>
 </html>

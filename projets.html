@@ -166,6 +166,15 @@
     <h2>Mes projets</h2>
     <div class="projets-gallery">
 
+        <!-- Projet Application de Nutrition -->
+<div class="projet">
+<img src="images/app-nutrition.png" alt="Application de nutrition">
+<h3>Application de nutrition</h3>
+<p>Projet personnel visant à connecter nutritionnistes et clients avec suivi alimentaire.</p>
+<a class="voir-btn" onclick="openModal('modal-nutrition')">Voir le projet</a>
+</div>
+
+
     <div class="projet">
         <img src="images/jeu-oriente-objet.png" alt="Jeu orienté objet">
         <h3>Jeu vidéo orienté objet</h3>
@@ -256,6 +265,29 @@
     });
     }
 </script>
+
+<!-- Modale Application de Nutrition -->
+<div id="modal-nutrition" class="modal">
+<div class="modal-content">
+    <span class="close-btn" onclick="closeModal('modal-nutrition')">&times;</span>
+    <img src="images/app-nutrition.png" alt="Capture App Nutrition" style="max-width: 100%; border-radius: 10px; margin-bottom: 1rem;">
+    <h3>Application de nutrition</h3>
+    <p>
+    Ce projet a été réalisé dans un cadre personnel afin de mettre en pratique mes connaissances.<br><br>
+    L’objectif est de créer une application de nutrition visant à faciliter la communication entre nutritionnistes et clients, tout en offrant un suivi personnalisé et un accès simplifié aux régimes alimentaires.
+    <br><br>
+    Fonctionnalités principales :
+    <ul>
+        <li>Création de profils clients et nutritionnistes</li>
+        <li>Ajout de régimes personnalisés</li>
+        <li>Messagerie intégrée pour le suivi</li>
+        <li>Historique des repas et suivi des progrès</li>
+        <li>Interface intuitive et responsive</li>
+    </ul>
+    </p>
+</div>
+</div>
+
 
 </body>
 </html>
