@@ -1,1 +1,18 @@
 /* Feuille de style principale */
+.skill-filters {
+text-align: center;
+margin-bottom: 2rem;
+}
+.skill-filters button {
+margin: 0 0.5rem;
+padding: 0.5rem 1rem;
+border: none;
+background-color: #00796b;
+color: white;
+border-radius: 8px;
+cursor: pointer;
+transition: background 0.3s;
+}
+.skill-filters button:hover {
+background-color: #004d40;
+}
