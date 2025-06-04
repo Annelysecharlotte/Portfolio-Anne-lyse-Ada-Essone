@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Veille Technologique - Bases de Données</title>
+<link rel="stylesheet" href="style.css">
+<style>
+    body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f3ff;
+    color: #2d0353;
+    margin: 0;
+    padding: 0;
+    }
+
+    header {
+    background-color: #5b21b6;
+    padding: 1rem;
+    color: white;
+    text-align: center;
+    }
+
+    nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    }
+
+    nav li {
+    margin: 0 1rem;
+    }
+
+    nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    }
+
+    nav a:hover,
+    nav .active {
+    color: #d8b4fe;
+    }
+
+    main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 1rem;
+    }
+
+    h2 {
+    color: #4c1d95;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    }
+
+    section {
+    margin-bottom: 2.5rem;
+    animation: fadeIn 1s ease-out;
+    }
+
+    ul {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+    }
+
+    article {
+    background: white;
+    border-left: 6px solid #7c3aed;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease;
+    }
+
+    article:hover {
+    transform: translateY(-5px);
+    }
+
+    article h3 {
+    color: #6d28d9;
+    margin-top: 0;
+    }
+
+    a {
+    color: #5b21b6;
+    font-weight: bold;
+    text-decoration: none;
+    }
+
+    a:hover {
+    text-decoration: underline;
+    }
+
+    footer {
+    background-color: #5b21b6;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+    }
+
+    @keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Veille Technologique : Bases de Données</h1>
+    <nav>
+    <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="apropos.html">À Propos</a></li>
+        <li><a href="competences.html">Compétences</a></li>
+        <li><a href="projets.html">Projets</a></li>
+        <li><a href="stages.html">Stages</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="veille_technologique.html" class="active">Veille Tech</a></li>
+    </ul>
+    </nav>
+</header>
+
+<main>
+    <section>
+    <h2>🧠 Définition</h2>
+    <p>Une base de données est un ensemble structuré d'informations stockées électroniquement. Les SGBD permettent leur gestion efficace.</p>
+    <ul>
+        <li><strong>Relationnelles</strong> : données en tableaux (MySQL, PostgreSQL)</li>
+        <li><strong>NoSQL</strong> : données non structurées (MongoDB, Firebase)</li>
+        <li><strong>En mémoire</strong> : rapidité maximale (Redis, Memcached)</li>
+    </ul>
+    </section>
+
+    <section>
+    <h2>📰 Actualités 2025</h2>
+
+    <article>
+        <h3>1. MariaDB acquiert Codership</h3>
+        <p>MariaDB a acquis Galera Cluster pour renforcer la haute disponibilité.</p>
+        <a href="https://www.lemondeinformatique.fr/base-de-donnees-62.html" target="_blank">→ Lire l'article</a>
+    </article>
+
+    <article>
+        <h3>2. Varonis rachète Cyral</h3>
+        <p>Varonis améliore la sécurité des bases de données cloud-native via l'intégration de Cyral.</p>
+        <a href="https://france.scc.com/scc-france/blog/actualite-software-mai-2025" target="_blank">→ Lire l'article</a>
+    </article>
+
+    <article>
+        <h3>3. CNIL : sécurité des BDD</h3>
+        <p>La CNIL publie de nouvelles directives 2025 pour renforcer la sécurité des données personnelles.</p>
+        <a href="https://www.cnil.fr/fr/consignes-pour-renforcer-la-securite-des-grandes-bases-de-donnees" target="_blank">→ Lire l'article</a>
+    </article>
+    </section>
+</main>
+
+<footer>
+    <p>© 2025 Anne-Lyse Ada Essone | Portfolio</p>
+</footer>
+
+</body>
+</html>
