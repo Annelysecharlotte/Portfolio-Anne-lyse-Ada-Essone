@@ -1,1 +1,281 @@
-<!DOCTYPE html><html><head><title>Compétences | Ada Charlotte</title></head><body><h1>Compétences | Ada Charlotte</h1></body></html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Compétences | Ada Charlotte</title>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #5e35b1, #9575cd);
+      color: #fff;
+    }
+
+    header nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: rgba(60, 0, 100, 0.8);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 1.5rem;
+      letter-spacing: 1.5px;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links li a {
+      color: #ddd;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links li a.active,
+    .nav-links li a:hover {
+      color: #ffe;
+      text-shadow: 0 0 6px #d1c4e9;
+    }
+
+    section.section {
+      max-width: 1200px;
+      margin: 3rem auto 4rem;
+      padding: 0 1rem;
+      text-align: center;
+    }
+
+    section.section h2 {
+      font-size: 2.8rem;
+      margin-bottom: 2rem;
+      text-shadow: 0 0 8px #b39ddb;
+    }
+
+    .skills-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .flip-card {
+      background: transparent;
+      width: 220px;
+      height: 130px;
+      perspective: 1000px;
+    }
+
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 14px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      backface-visibility: hidden;
+      background: rgba(0,0,0,0.6);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(8px);
+      padding: 1rem;
+      box-sizing: border-box;
+      color: #eee;
+    }
+
+    .flip-card-front {
+      flex-direction: row;
+    }
+
+    .flip-card-front img {
+      max-width: 50px;
+      max-height: 50px;
+      margin-right: 1rem;
+    }
+
+    .flip-card-front h3 {
+      font-size: 1.2rem;
+      text-align: left;
+    }
+
+    .flip-card-back {
+      transform: rotateY(180deg);
+      font-size: 0.95rem;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      background: rgba(60, 0, 100, 0.8);
+      color: #ccc;
+    }
+
+    @media (max-width: 720px) {
+      .flip-card {
+        width: 90vw;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Ada Charlotte</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="apropos.html">À propos</a></li>
+        <li><a href="competences.html" class="active">Compétences</a></li>
+        <li><a href="projets.html">Projets</a></li>
+        <li><a href="stages.html">Stages</a></li>
+        <li><a href="veille_technologique.html">Veille Tech</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="section">
+    <h2>Mes compétences</h2>
+    <div class="skills-gallery">
+      <div class="flip-card" data-aos="fade-up">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images/html-css.png" alt="HTML/CSS">
+            <h3>HTML / CSS</h3>
+          </div>
+          <div class="flip-card-back">
+            Création de sites web modernes et responsive
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card" data-aos="fade-up" data-aos-delay="50">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images/javascript.png" alt="JavaScript">
+            <h3>JavaScript</h3>
+          </div>
+          <div class="flip-card-back">
+            Dynamisme et interactivité côté client
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images/php-mysql.png" alt="PHP/MySQL">
+            <h3>PHP / MySQL</h3>
+          </div>
+          <div class="flip-card-back">
+            Développement backend et gestion de bases de données
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card" data-aos="fade-up" data-aos-delay="150">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images/python.png" alt="Python">
+            <h3>Python</h3>
+          </div>
+          <div class="flip-card-back">
+            Scripts, automation et développement d’applications
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images/database.png" alt="BDD">
+            <h3>Modélisation BDD</h3>
+          </div>
+          <div class="flip-card-back">
+            MCD, MLD et conception avec MySQL
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card" data-aos="fade-up" data-aos-delay="250">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images/network.png" alt="Réseaux">
+            <h3>Réseaux</h3>
+          </div>
+          <div class="flip-card-back">
+            Réseaux IP, VirtualBox, configuration
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images/github.png" alt="GitHub">
+            <h3>GitHub</h3>
+          </div>
+          <div class="flip-card-back">
+            Suivi de version et collaboration
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card" data-aos="fade-up" data-aos-delay="350">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images/azure.png" alt="Azure">
+            <h3>Azure Studio</h3>
+          </div>
+          <div class="flip-card-back">
+            Manipulation et sauvegarde de données
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Ada Charlotte. Tous droits réservés.
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 900,
+      easing: 'ease-out-cubic',
+      once: true,
+    });
+  </script>
+</body>
+</html>

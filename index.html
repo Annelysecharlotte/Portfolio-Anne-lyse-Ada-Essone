@@ -1,1 +1,153 @@
-<!DOCTYPE html><html><head><title>Accueil | Ada Charlotte</title></head><body><h1>Accueil | Ada Charlotte</h1></body></html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Accueil | Ada Charlotte</title>
+<link rel="stylesheet" href="style.css">
+<style>
+    body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #fce4ec, #e1bee7);
+    color: #333;
+    }
+
+    header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgba(106, 27, 154, 0.9);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    }
+
+    .logo {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    }
+
+    .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    }
+
+    .nav-links li a {
+    color: #eee;
+    text-decoration: none;
+    font-weight: 600;
+    }
+
+    .nav-links li a.active,
+    .nav-links li a:hover {
+    color: #fff;
+    text-shadow: 0 0 5px #d1c4e9;
+    }
+
+    .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 5rem 2rem;
+    max-width: 1200px;
+    margin: auto;
+    }
+
+    .hero-text {
+    flex: 1 1 500px;
+    text-align: left;
+    }
+
+    .hero h1 {
+    font-size: 1.6rem;
+    color: #6a1b9a;
+    margin-bottom: 1rem;
+    }
+
+    .hero p {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 600px;
+    }
+
+    .hero-img {
+    flex: 1 1 300px;
+    text-align: center;
+    }
+
+    .hero-img img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #6a1b9a;
+    box-shadow: 0 0 15px rgba(33, 150, 243, 0.6), 0 0 25px rgba(63, 81, 181, 0.4);
+    transition: transform 0.3s ease;
+    }
+
+    .hero-img img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(33, 150, 243, 0.8), 0 0 35px rgba(63, 81, 181, 0.6);
+    }
+
+    .cv-btn {
+    display: inline-block;
+    margin-top: 1.5rem;
+    background-color: #6a1b9a;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    }
+
+    .cv-btn:hover {
+    background-color: #4a148c;
+    }
+
+    footer {
+    text-align: center;
+    padding: 1rem;
+    background: #6a1b9a;
+    color: #eee;
+    }
+</style>
+</head>
+<body>
+<header>
+    <nav>
+    <div class="logo">Ada Charlotte</div>
+    <ul class="nav-links">
+        <li><a href="index.html" class="active">Accueil</a></li>
+        <li><a href="apropos.html">À propos</a></li>
+        <li><a href="competences.html">Compétences</a></li>
+        <li><a href="projets.html">Projets</a></li>
+        <li><a href="stages.html">Stages</a></li>
+        <li><a href="veille_technologique.html">Veille Tech</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+    <h1>Bienvenue sur mon portfolio</h1>
+    <p>Je suis Ada Charlotte, étudiante en BTS SIO option SLAM, passionnée par le développement web et la modélisation de bases de données. Découvrez mes compétences, projets et réalisations à travers ce site !</p>
+    </div>
+    <div class="hero-img">
+    <img src="images/photo-profil.jpg" alt="Photo de profil Ada Charlotte">
+    </div>
+</section>
+
+<footer>
+    &copy; 2025 Ada Charlotte. Tous droits réservés.
+</footer>
+</body>
+</html>
