@@ -91,6 +91,12 @@ nav a:hover::after {
 /* SECTION */
 section {
     padding: 60px 10%;
+}section {
+    margin-bottom: 40px;
+}
+
+.card {
+    margin-bottom: 20px;
 }
 
 /* TITRE */
