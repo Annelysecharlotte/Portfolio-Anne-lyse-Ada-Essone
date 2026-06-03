@@ -431,3 +431,78 @@ nav a:hover::after {
     font-size: 0.9rem;
     color: #555;
 }
+.skills-section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.skills-section h2 {
+    font-size: 2.6rem;
+    color: #ff6b9d;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 45px;
+}
+
+.skills-grid {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+.skill-card {
+    width: 240px;
+    background: rgba(255, 255, 255, 0.88);
+    padding: 30px 25px;
+    border-radius: 22px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+    transition: 0.35s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-12px) scale(1.03);
+}
+
+.skill-card i {
+    font-size: 3rem;
+    color: #ff6b9d;
+    margin-bottom: 15px;
+}
+
+.skill-card h3 {
+    color: #ff914d;
+    margin-bottom: 10px;
+}
+
+.level {
+    display: block;
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.skill-card button {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background: linear-gradient(45deg, #ff6b9d, #ff914d);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.skill-card button:hover {
+    transform: scale(1.08);
+}
+
+.skill-info {
+    display: none;
+    margin-top: 15px;
+    color: #555;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}

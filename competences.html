@@ -3,11 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Compétences</title>
-
-    <!-- Icônes -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
@@ -16,79 +14,75 @@
     <h1>Anne Lyse Charlotte</h1>
     <nav>
         <a href="index.html">Accueil</a>
-        <a href="about.html">À propos</a>
-        <a href="skills.html">Compétences</a>
-        <a href="projects.html">Projets</a>
+        <a href="apropos.html">À propos</a>
+        <a href="competences.html">Compétences</a>
+        <a href="projets.html">Projets</a>
+        <a href="stages.html">Stages</a>
+        <a href="veille_technologique.html">Veille</a>
         <a href="contact.html">Contact</a>
     </nav>
 </header>
 
 <section class="skills-section">
-    <h2>Mes Compétences</h2>
+    <h2>Mes compétences</h2>
+    <p class="subtitle">
+        Voici les principales technologies que j’utilise dans mes projets web et applicatifs.
+    </p>
 
     <div class="skills-grid">
 
-        <!-- HTML -->
         <div class="skill-card">
-            <i class="fab fa-html5 icon"></i>
+            <i class="fa-brands fa-html5"></i>
             <h3>HTML / CSS</h3>
-
+            <span class="level">Niveau : Avancé</span>
             <button onclick="toggleInfo(this)">Voir plus</button>
-
-            <p class="hidden">
-                Création de sites web structurés, responsive et modernes avec animations CSS.
+            <p class="skill-info">
+                Création de pages web structurées, modernes et responsives. Utilisation de Flexbox, Grid, animations CSS et mise en page adaptée au mobile.
             </p>
         </div>
 
-        <!-- JS -->
         <div class="skill-card">
-            <i class="fab fa-js icon"></i>
+            <i class="fa-brands fa-js"></i>
             <h3>JavaScript</h3>
-
+            <span class="level">Niveau : Intermédiaire</span>
             <button onclick="toggleInfo(this)">Voir plus</button>
-
-            <p class="hidden">
-                Ajout d’interactivité, manipulation du DOM et gestion des événements.
+            <p class="skill-info">
+                Ajout d’interactivité sur les pages web : boutons dynamiques, affichage conditionnel, manipulation du DOM et événements utilisateur.
             </p>
         </div>
 
-        <!-- PHP -->
         <div class="skill-card">
-            <i class="fab fa-php icon"></i>
+            <i class="fa-brands fa-php"></i>
             <h3>PHP / MySQL</h3>
-
+            <span class="level">Niveau : Intermédiaire</span>
             <button onclick="toggleInfo(this)">Voir plus</button>
-
-            <p class="hidden">
-                Développement back-end, gestion des bases de données et création d'applications dynamiques.
+            <p class="skill-info">
+                Développement de pages dynamiques, connexion à une base de données, requêtes SQL, formulaires, CRUD et gestion des données.
             </p>
         </div>
 
-        <!-- Python -->
         <div class="skill-card">
-            <i class="fab fa-python icon"></i>
+            <i class="fa-brands fa-python"></i>
             <h3>Python</h3>
-
+            <span class="level">Niveau : Intermédiaire</span>
             <button onclick="toggleInfo(this)">Voir plus</button>
-
-            <p class="hidden">
-                Création de scripts, logique algorithmique et développement de projets comme Gâteau Factory.
+            <p class="skill-info">
+                Utilisation de Python pour développer des programmes, travailler la logique algorithmique et réaliser des projets comme Gâteau Factory.
             </p>
         </div>
 
     </div>
 </section>
 
-<!-- SCRIPT -->
 <script>
 function toggleInfo(button) {
-    let text = button.nextElementSibling;
+    const info = button.nextElementSibling;
 
-    if (text.style.display === "block") {
-        text.style.display = "none";
+    if (info.style.display === "block") {
+        info.style.display = "none";
         button.textContent = "Voir plus";
     } else {
-        text.style.display = "block";
+        info.style.display = "block";
         button.textContent = "Voir moins";
     }
 }
