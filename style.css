@@ -353,3 +353,33 @@ nav a:hover::after {
     transform: scale(1.02);
     transition: 0.3s;
 }
+/* BOUTONS PROJET */
+.project-buttons {
+    margin-top: 15px;
+}
+
+.project-buttons .btn {
+    margin: 5px;
+    display: inline-block;
+    font-size: 0.9rem;
+}
+
+/* SCREENSHOTS */
+.screenshots {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.screenshots img {
+    width: 120px;
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/* effet zoom */
+.screenshots img:hover {
+    transform: scale(1.1);
+}
