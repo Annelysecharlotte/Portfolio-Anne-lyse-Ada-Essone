@@ -1,88 +1,98 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mes Stages | Ada Charlotte</title>
-<link rel="stylesheet" href="style.css">
-<style>
-    body {
-    background: linear-gradient(to bottom right, #e1bee7, #bbdefb);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    }
-    .container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 2rem;
-    }
-    h1 {
-    text-align: center;
-    color: #4a148c;
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    }
-    .stage {
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    padding: 1.5rem;
-    margin-bottom: 2rem;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    }
-    .stage h2 {
-    color: #ce93d8;
-    font-size: 1.8rem;
-    margin-bottom: 0.5rem;
-    }
-    .stage p {
-    font-size: 1rem;
-    line-height: 1.6;
-    }
-    .stage a {
-    display: inline-block;
-    margin-top: 1rem;
-    background: #7e57c2;
-    color: white;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    border-radius: 6px;
-    transition: background 0.3s;
-    }
-    .stage a:hover {
-    background: #512da8;
-    }
-</style>
+    <meta charset="UTF-8">
+    <title>Stages</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-    <div class="logo">Ada Charlotte</div>
-    <ul class="nav-links">
-    <li><a href="index.html">Accueil</a></li>
-    <li><a href="apropos.html">À propos</a></li>
-    <li><a href="competences.html">Compétences</a></li>
-    <li><a href="projets.html">Projets</a></li>
-    <li><a href="stages.html" class="active">Stages</a></li>
-    <li><a href="veille_technologique.html">Veille Tech</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    </ul>
+
+<header>
+    <h1>Anne Lyse Charlotte</h1>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="apropos.html">À propos</a>
+        <a href="competences.html">Compétences</a>
+        <a href="projets.html">Projets</a>
+        <a href="stages.html">Stages</a>
+        <a href="veille_technologique.html">Veille</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 </header>
-<div class="container">
-    <h1>Mes Stages</h1>
 
-    <div class="stage">
-    <h2>Stage 1 : Gestion de plateforme  - United bank of africa</h2>
-    <p>Durant ce stage de 6 semaines, j'ai participé à la création d'un modéle conceptuel de donnée Création et conception d'une base de donnée pour une plateforme de gestion de plainte pour les client.</p>
-    <a href="documents/rapport_stage1.pdf" target="_blank">Voir le rapport</a>
+<section class="stages-section">
+    <h2>Mes stages</h2>
+    <p class="subtitle">
+        Deux expériences professionnelles qui m’ont permis de développer mes compétences techniques et humaines.
+    </p>
+
+    <div class="stage-card">
+        <div class="stage-content">
+            <h3>My GoodLife</h3>
+            <span class="stage-date">Janvier 2025 - Février 2025</span>
+
+            <p>
+                Durant ce stage, j’ai travaillé sur la gestion et l’analyse de bases de données.
+                J’ai manipulé Azure Data Studio, configuré des connexions SQL et extrait des données
+                vers des fichiers Excel et CSV.
+            </p>
+
+            <h4>Missions réalisées</h4>
+            <ul>
+                <li>Manipulation de bases de données avec Azure Data Studio</li>
+                <li>Configuration de connexions SQL sécurisées</li>
+                <li>Extraction de données depuis la base My Eat Well</li>
+                <li>Export des données en fichiers Excel et CSV</li>
+                <li>Rédaction de résumés techniques pour chaque table</li>
+            </ul>
+
+            <div class="tags">
+                <span>SQL</span>
+                <span>Azure Data Studio</span>
+                <span>Excel</span>
+                <span>Base de données</span>
+            </div>
+
+            <div class="stage-buttons">
+                <a href="documents/Rapport de Stage Anne lyse.pdf" class="btn" target="_blank">Voir le rapport</a>
+            </div>
+        </div>
     </div>
 
-    <div class="stage">
-    <h2>Stage 2 : Gestion de Base de Données - My GoodLife </h2>
-    <p>Ce stage s’est concentré sur la gestion des bases de données. J'ai conçu des MCD/MLD, l'extraction et la sauvegarde des données physiques .</p>
-    <a href="documents/rapport_stage2.pdf" target="_blank">Voir le rapport</a>
-    </div>
+    <div class="stage-card">
+        <div class="stage-content">
+            <h3>United Bank For Africa - UBA</h3>
+            <span class="stage-date">Août 2024 - Septembre 2024</span>
 
-</div>
+            <p>
+                Ce stage m’a permis de découvrir le fonctionnement d’une banque et l’importance
+                des outils digitaux dans la relation client. J’ai participé à l’accompagnement des
+                clients et à la réflexion autour d’une plateforme de gestion des plaintes.
+            </p>
+
+            <h4>Missions réalisées</h4>
+            <ul>
+                <li>Accueil et accompagnement des clients</li>
+                <li>Assistance autour des produits digitaux banc²aires</li>
+                <li>Analyse des besoins utilisateurs</li>
+                <li>Réflexion sur une plateforme de gestion des plaintes</li>
+                <li>Réalisation d’un diagramme UML avec Draw.io</li>
+            </ul>
+
+            <div class="tags">
+                <span>UML</span>
+                <span>Draw.io</span>
+                <span>Relation client</span>
+                <span>Analyse</span>
+            </div>
+
+            <div class="stage-buttons">
+                <a href="documents/Rapport de stage Ada Essone Anne Lyse Charlotte.pdf" class="btn" target="_blank">Voir le rapport</a>
+            </div>
+        </div>
+    </div>
+</section>
+
 </body>
 </html>
