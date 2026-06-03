@@ -687,3 +687,72 @@ nav a:hover::after {
     width: 260px;
     margin: 20px 0;
 }
+.contact-section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2.6rem;
+    color: #ff6b9d;
+}
+
+.contact-card {
+    max-width: 1000px;
+    margin: 40px auto;
+    display: flex;
+    gap: 40px;
+    background: rgba(255,255,255,0.9);
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+
+.contact-info {
+    flex: 1;
+    text-align: left;
+}
+
+.contact-info h3 {
+    color: #ff914d;
+}
+
+.contact-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 14px;
+    border-radius: 15px;
+    border: 1px solid #ddd;
+    font-family: inherit;
+}
+
+.contact-form textarea {
+    min-height: 130px;
+    resize: none;
+}
+
+.contact-form button {
+    border: none;
+    padding: 14px;
+    border-radius: 30px;
+    background: linear-gradient(45deg, #ff6b9d, #ff914d);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    transform: scale(1.03);
+}
+
+@media (max-width: 768px) {
+    .contact-card {
+        flex-direction: column;
+    }
+}
