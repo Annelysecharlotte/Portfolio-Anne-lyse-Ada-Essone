@@ -303,3 +303,53 @@ nav a:hover::after {
         text-align: center;
     }
 }
+.projects-section {
+    padding: 80px 20px;
+}
+
+.projects-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #ff6b9d;
+    margin-bottom: 50px;
+}
+
+/* BLOC PROJET */
+.project-detail {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 80px;
+    padding: 30px;
+}
+
+/* IMAGE */
+.project-detail img {
+    width: 350px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+/* TEXTE */
+.project-info {
+    max-width: 500px;
+}
+
+.project-info h3 {
+    color: #ff914d;
+    font-size: 1.8rem;
+}
+
+.project-info ul {
+    margin-top: 15px;
+}
+
+.project-info li {
+    margin-bottom: 8px;
+}
+
+/* HOVER */
+.project-detail:hover {
+    transform: scale(1.02);
+    transition: 0.3s;
+}
