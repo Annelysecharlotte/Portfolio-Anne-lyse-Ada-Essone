@@ -15,7 +15,7 @@ header {
 }
 
 header h1 {
-    color: #ff6b9d;
+    color: #1e293b;
 }
 
 nav a {
@@ -34,7 +34,7 @@ nav a {
 .projects-section h2 {
     font-size: 2.5rem;
     margin-bottom: 40px;
-    color: #ff6b9d;
+    color: #2563eb;
 }
 
 /* CONTAINER */
@@ -80,7 +80,7 @@ nav a {
     box-shadow: 0 20px 50px rgba(0,0,0,0.2);
 }
 nav a:hover {
-    color: #ff6b9d;
+    color: #2563eb;
 }
 
 /* HERO */
@@ -99,11 +99,11 @@ nav a:hover {
 
 .hero-text h2 {
     font-size: 3rem;
-    color: #ff6b9d;
+    color: #2563eb;
 }
 
 .hero-text h3 {
-    color: #ff914d;
+    color: #1e293b;
     margin-bottom: 15px;
 }
 
@@ -116,7 +116,12 @@ nav a:hover {
 .btn {
     display: inline-block;
     padding: 14px 30px;
-    background: linear-gradient(45deg, #ff6b9d, #ff914d);
+    background: linear-gradient(
+135deg,
+#f8fafc,
+#eef2ff,
+#ffffff
+);
     color: white;
     border-radius: 30px;
     text-decoration: none;
@@ -198,7 +203,7 @@ header {
 }
 
 header h1 {
-    color: #ff6b9d;
+    color:  #2563eb;
 }
 
 nav a {
@@ -214,7 +219,7 @@ nav a::after {
     content: "";
     width: 0%;
     height: 2px;
-    background: #ff6b9d;
+    background: #2563eb;
     position: absolute;
     bottom: -5px;
     left: 0;
@@ -244,12 +249,12 @@ nav a:hover::after {
 
 .hero h2 {
     font-size: 3rem;
-    color: #ff6b9d;
+    color: #2563eb;
 }
 
 .hero h3 {
     margin-top: 10px;
-    color: #ff914d;
+    color:  #1e293b;
 }
 .hero-text {
     animation: slideLeft 1s ease;
@@ -336,7 +341,7 @@ nav a:hover::after {
 }
 
 .project-info h3 {
-    color: #ff914d;
+    color: #1e293b;
     font-size: 1.8rem;
 }
 
@@ -409,7 +414,7 @@ nav a:hover::after {
 /* ICON */
 .icon {
     font-size: 40px;
-    color: #ff6b9d;
+    color:  #2563eb;
     margin-bottom: 10px;
 }
 
@@ -418,7 +423,11 @@ nav a:hover::after {
     margin-top: 10px;
     padding: 8px 15px;
     border: none;
-    background: linear-gradient(45deg, #ff6b9d, #ff914d);
+    background: linear-gradient(
+45deg,
+#2563eb,
+#3b82f6
+);
     color: white;
     border-radius: 20px;
     cursor: pointer;
@@ -438,7 +447,7 @@ nav a:hover::after {
 
 .skills-section h2 {
     font-size: 2.6rem;
-    color: #ff6b9d;
+    color: #7a6bff;
     margin-bottom: 10px;
 }
 
@@ -469,12 +478,12 @@ nav a:hover::after {
 
 .skill-card i {
     font-size: 3rem;
-    color: #ff6b9d;
+    color:  #2563eb;
     margin-bottom: 15px;
 }
 
 .skill-card h3 {
-    color: #ff914d;
+    color:  #1e293b;
     margin-bottom: 10px;
 }
 
@@ -489,7 +498,7 @@ nav a:hover::after {
     border: none;
     padding: 10px 20px;
     border-radius: 25px;
-    background: linear-gradient(45deg, #ff6b9d, #ff914d);
+    background: linear-gradient(45deg, #2563eb, #1e293b);
     color: white;
     cursor: pointer;
     transition: 0.3s;
@@ -513,7 +522,7 @@ nav a:hover::after {
 
 .stages-section h2 {
     font-size: 2.6rem;
-    color: #ff6b9d;
+    color: #2563eb;
     margin-bottom: 10px;
 }
 
@@ -533,7 +542,7 @@ nav a:hover::after {
 }
 
 .stage-content h3 {
-    color: #ff914d;
+    color:  #1e293b;
     font-size: 1.8rem;
 }
 
@@ -568,8 +577,8 @@ nav a:hover::after {
     margin: 5px;
     padding: 8px 14px;
     border-radius: 20px;
-    background: #ffe4ec;
-    color: #ff6b9d;
+    background: #dbeafe;
+    color: #2563eb;
     font-weight: bold;
     font-size: 0.9rem;
 }
@@ -602,7 +611,7 @@ nav a:hover::after {
 }
 
 .about-content h2 {
-    color: #ff6b9d;
+    color: #2563eb;
     margin-bottom: 20px;
 }
 
@@ -621,7 +630,7 @@ nav a:hover::after {
 
 .quality {
     background: #ffe4ec;
-    color: #ff6b9d;
+    color: #2563eb;
     padding: 10px 15px;
     border-radius: 20px;
     font-weight: bold;
@@ -646,7 +655,7 @@ nav a:hover::after {
 
 .veille-section h2 {
     font-size: 2.6rem;
-    color: #ff6b9d;
+    color:  #2563eb;
     margin-bottom: 10px;
 }
 
@@ -666,7 +675,7 @@ nav a:hover::after {
 }
 
 .veille-card h3 {
-    color: #ff914d;
+    color: #1e293b;
     margin-bottom: 15px;
 }
 
@@ -694,7 +703,7 @@ nav a:hover::after {
 
 .contact-section h2 {
     font-size: 2.6rem;
-    color: #ff6b9d;
+    color: #2563eb;
 }
 
 .contact-card {
@@ -714,7 +723,7 @@ nav a:hover::after {
 }
 
 .contact-info h3 {
-    color: #ff914d;
+    color: #1e293b;
 }
 
 .contact-form {
@@ -741,7 +750,7 @@ nav a:hover::after {
     border: none;
     padding: 14px;
     border-radius: 30px;
-    background: linear-gradient(45deg, #ff6b9d, #ff914d);
+    background: linear-gradient(45deg, #2563eb,  #1e293b);
     color: white;
     font-weight: bold;
     cursor: pointer;
