@@ -765,3 +765,48 @@ nav a:hover::after {
         flex-direction: column;
     }
 }
+.skills-gallery {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.skills-gallery h2 {
+    color: #2563eb;
+    margin-bottom: 40px;
+}
+
+.gallery {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery-card {
+    width: 320px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.gallery-card:hover {
+    transform: translateY(-8px);
+}
+
+.gallery-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.gallery-card h3 {
+    padding: 15px;
+    color: #1e293b;
+}
+
+.gallery-card p {
+    padding: 0 15px 20px;
+    color: #555;
+}
