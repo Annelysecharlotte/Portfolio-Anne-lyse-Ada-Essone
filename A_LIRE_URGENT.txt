@@ -1,0 +1,25 @@
+MODE D EMPLOI RAPIDE
+
+1) Copie les dossiers images/ et documents/ dans ton dossier du portfolio.
+2) Si Windows demande de remplacer des fichiers, accepte.
+3) Verifie que les noms sont exactement les memes dans ton code HTML.
+4) Dans le terminal VS Code :
+   git add .
+   git commit -m "ajout images et documents"
+   git push
+5) Recharge le site avec CTRL + F5.
+
+Fichiers importants inclus :
+- documents/cv.pdf
+- documents/Rapport de Stage Anne lyse.pdf
+- documents/Rapport de stage Ada Essone Anne Lyse Charlotte.pdf
+- documents/bdd-mygoodlife.sql
+- images/photo-profil.jpg
+- images/mygoodlife.png
+- images/gateaufactory.png
+- images/mcd-mygoodlife.png
+- images/mld-mygoodlife.png
+- images/screen-mygoodlife1.png
+- images/screen-mygoodlife2.png
+- images/uba-logo.png
+- images/mygoodlife-logo.png
